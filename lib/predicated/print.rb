@@ -6,11 +6,11 @@ module Predicated
 
     private
     def part_to_s(thing)
-      part_to_str(thing) {|thing| thing.to_s}
+      part_to_str(thing) {|t| t.to_s}
     end
     
     def part_inspect(thing, indent="")
-      part_to_str(thing, indent) {|thing| thing.inspect(indent)}
+      part_to_str(thing, indent) {|t| t.inspect(indent)}
     end
     
     def part_to_str(thing, indent="")
